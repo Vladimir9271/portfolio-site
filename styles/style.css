@@ -10,6 +10,10 @@
       color: #f0f0f0;
       padding-top: 70px;
   }
+  html, body {
+    overflow-x: hidden;
+}
+
 
   header,
   section,
