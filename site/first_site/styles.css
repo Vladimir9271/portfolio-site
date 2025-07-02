@@ -1,0 +1,104 @@
+/* общ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pr {
+    display: none;
+}
+
+.main div {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    scroll-margin-top: 70px;
+}
+
+/* оглавление */
+
+/*  */
+#menu_nav {
+    position: relative;
+    transition-property: height, width, background-color;
+transition-duration: 3s;
+transition-timing-function: ease-in, ease, linear;
+}
+
+#menu_el {
+    display: none;
+    position: absolute;
+    background-image: url(./img/img2.png);
+    background-size: 250%;
+}
+
+#menu_nav:hover #menu_el {
+    display: block;
+}
+
+/*  */
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/img2.png);
+    background-size: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9990;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+nav a :hover {
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+/* основа */
+
+.main {
+    position: relative;
+    top: 60px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.section1 {
+    margin: 10px;
+
+}
+
+.section2 {
+    margin: 10px;
+}
+
+.section3 {
+    margin: 10px;
+}
+
+.section4 {
+    margin: 10px;
+}

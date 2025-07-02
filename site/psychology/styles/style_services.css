@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #FCF2E5;
+    align-items: center;
+}
+
+/* главный заголовок */
+
+.three {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+}
+
+.three h1 {
+    font-family: 'Merriweather', serif;
+    position: relative;
+    color: #FCF2E5;
+    background: #90806A;
+    font-size: 2.5em;
+    font-weight: normal;
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+}
+
+ 
+
+.сentre span {
+    font-size: 52px;
+    color: #90806A;
+    text-align: center;
+}
+
+.сentre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+
+/* навигация */
+
+nav h2 {
+    background-color: #90806A;
+    color: #FCF2E5;
+    text-align: center;
+    padding: 15px;
+    transition: .3s linear;
+    font-size: 26px;
+    margin: 0;
+    width: 100px;
+}
+
+nav h2:hover {
+    background: #FCF2E5;
+    color: #90806A;
+}
+
+
+
+nav {
+    padding-right: 10px;
+    padding-left: 50px;
+    position: relative;
+    transition-property: height, width, background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in, ease, linear;
+}
+
+#menu_el {
+    display: none;
+    position: absolute;
+    background-image: url(./img/img2.png);
+    background-size: 250%;
+    text-align: center;
+    z-index: 100;
+}
+
+nav:hover #menu_el {
+    display: block;
+}
+
+#menu_el a {
+    text-decoration: none;
+}
+
+
+
+/*  */
+
+main {
+    width: 100%;
+    background-color: #dcd4cb;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.zagolovok1 {
+    margin-bottom: 60px;
+}
+
+.zagolovok1 h2 {
+    text-align: center;
+    color: #90806A;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.zagolovok1 samp {
+    color: rgb(243, 91, 21);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section1 {
+    transition-duration: .6s;
+    transition-timing-function: ease-in, ease, linear;
+    background-color: #ffffff;
+    margin: 20px;
+    width: 267px;
+    height: 300px;
+}
+
+.section1 p {
+    transition-duration: .4s;
+    transition-timing-function: ease-in, ease, linear;
+    margin: 0;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #90806A;
+}
+
+.section1:hover {
+    background-color: #dcd4cb;
+}
+
+.section1:hover p {
+    color: #c01f1f;
+    font-size: 20px;
+    
+}
+
+.section1 img {
+    height: 235px;
+}
+
+.help_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_section1 {
+    margin: 0 400px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.section2 img {
+    height: 235px;
+}
+
+.section2 p {
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #90806A;
+    font-size: 27px;
+}
+
+.section2 {
+    position: relative;
+    height: 306px;
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.section2_gg {
+    width: 100%;
+}
+
+.el1 {
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    transition-duration: .4s;
+    transition-timing-function: ease-in, ease, linear;
+    width: 400px;
+}
+
+.el2 {
+    position: absolute;
+    left: 400px;
+    opacity: 0;
+    transition-duration: .4s;
+    transition-timing-function: ease-in, ease, linear;
+    width: 400px;
+}
+
+.section2_gg:hover .el1 {
+    opacity: 0;
+    right: 400px;
+}
+
+.section2_gg:hover .el2 {
+    opacity: 1;
+    left: 0;
+}
+
+
+.perexod a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 30px;
+}
+.perexod {
+    margin: 100px auto;
+}
+@media (max-width: 767px) {
+    .сentre {
+        display: none;
+    }
+
+    .three h1 {
+        font-size: 20px;
+    }
+
+    .three {
+        padding: 20px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+        padding-left: 0;
+        padding: 8px;
+    }
+
+    nav {
+        margin-right: 5px;
+        padding-left: 0;
+    }
+
+    main {
+        padding: 0;
+    }
+    .main_section1 {
+        margin: 0 auto;
+    }
+    .el1 p{
+        font-size: 20px;
+        width: 80%;
+    }
+    .el2 p{
+        width: 80%;
+        font-size: 20px;
+    }
+    .section2 p {
+        margin: 0, auto;
+    }
+    .el11{
+        display: flex;
+        justify-content: center;
+    }
+    .perexod h2{
+        font-size: 20px;
+    }
+    
+}
